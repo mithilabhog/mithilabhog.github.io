@@ -138,6 +138,32 @@
     .lead { margin-left: auto; margin-right: auto; }
     .frame { order: -1; width: min(78%, 320px); }
   }
+
+  .product-card { padding: 1rem; }
+  .buy-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.8rem; }
+  .buy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    background: var(--brown);
+    color: #FFF3D6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .buy-btn:hover, .buy-btn:focus-visible {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    outline: 2px solid var(--rust);
+    outline-offset: 2px;
+  }
+  @media (max-width: 760px) {
+    .buy-row { justify-content: center; }
+    .buy-btn { width: 100%; }
+  }
 </style>
 </head>
 <body>
@@ -163,57 +189,42 @@
     <h2>Shop our pickles</h2>
     <div class="product-grid">
       <article class="product-card">
-        <div class="product-media"><img src="jar.png" alt="Mithila Bhog pickle jar"></div>
         <h3 class="product-name">Pickle 1</h3>
-        <p class="product-size">Size: TBD</p>
-        <p class="product-price">₹&nbsp;—</p>
-        <div class="buy-row">
-          <a class="buy-btn amazon" href="https://amzn.in/d/02gWPkLc" target="_blank" rel="noopener"><img src="amazon-logo.png" alt="" class="brand-logo">Amazon</a>
-          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/advZbwuuuN" target="_blank" rel="noopener"><img src="flipkart-logo.png" alt="" class="brand-logo">Flipkart</a>
+        <div class="buy-row" aria-label="Buy this pickle">
+          <a class="buy-btn amazon" href="https://amzn.in/d/02gWPkLc" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/advZbwuuuN" target="_blank" rel="noopener">Buy on Flipkart</a>
         </div>
       </article>
 
       <article class="product-card">
-        <div class="product-media"><img src="jar.png" alt="Mithila Bhog pickle jar"></div>
         <h3 class="product-name">Pickle 2</h3>
-        <p class="product-size">Size: TBD</p>
-        <p class="product-price">₹&nbsp;—</p>
-        <div class="buy-row">
-          <a class="buy-btn amazon" href="https://amzn.in/d/0fXcjadj" target="_blank" rel="noopener"><img src="amazon-logo.png" alt="" class="brand-logo">Amazon</a>
-          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/aUAWYHuuuN" target="_blank" rel="noopener"><img src="flipkart-logo.png" alt="" class="brand-logo">Flipkart</a>
+        <div class="buy-row" aria-label="Buy this pickle">
+          <a class="buy-btn amazon" href="https://amzn.in/d/0fXcjadj" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/aUAWYHuuuN" target="_blank" rel="noopener">Buy on Flipkart</a>
         </div>
       </article>
 
       <article class="product-card">
-        <div class="product-media"><img src="jar.png" alt="Mithila Bhog pickle jar"></div>
         <h3 class="product-name">Pickle 3</h3>
-        <p class="product-size">Size: TBD</p>
-        <p class="product-price">₹&nbsp;—</p>
-        <div class="buy-row">
-          <a class="buy-btn amazon" href="https://amzn.in/d/0fENzluJ" target="_blank" rel="noopener"><img src="amazon-logo.png" alt="" class="brand-logo">Amazon</a>
-          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/adyALiuuuN" target="_blank" rel="noopener"><img src="flipkart-logo.png" alt="" class="brand-logo">Flipkart</a>
+        <div class="buy-row" aria-label="Buy this pickle">
+          <a class="buy-btn amazon" href="https://amzn.in/d/0fENzluJ" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/adyALiuuuN" target="_blank" rel="noopener">Buy on Flipkart</a>
         </div>
       </article>
 
       <article class="product-card">
-        <div class="product-media"><img src="jar.png" alt="Mithila Bhog pickle jar"></div>
         <h3 class="product-name">Pickle 4</h3>
-        <p class="product-size">Size: TBD</p>
-        <p class="product-price">₹&nbsp;—</p>
-        <div class="buy-row">
-          <a class="buy-btn amazon" href="https://amzn.in/d/022PdjP7" target="_blank" rel="noopener"><img src="amazon-logo.png" alt="" class="brand-logo">Amazon</a>
-          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/OIwoWBNNNN" target="_blank" rel="noopener"><img src="flipkart-logo.png" alt="" class="brand-logo">Flipkart</a>
+        <div class="buy-row" aria-label="Buy this pickle">
+          <a class="buy-btn amazon" href="https://amzn.in/d/022PdjP7" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/OIwoWBNNNN" target="_blank" rel="noopener">Buy on Flipkart</a>
         </div>
       </article>
 
       <article class="product-card">
-        <div class="product-media"><img src="jar.png" alt="Mithila Bhog pickle jar"></div>
         <h3 class="product-name">Pickle 5</h3>
-        <p class="product-size">Size: TBD</p>
-        <p class="product-price">₹&nbsp;—</p>
-        <div class="buy-row">
-          <a class="buy-btn amazon" href="https://amzn.in/d/08v4jsUt" target="_blank" rel="noopener"><img src="amazon-logo.png" alt="" class="brand-logo">Amazon</a>
-          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/OI_cQ9NNNN" target="_blank" rel="noopener"><img src="flipkart-logo.png" alt="" class="brand-logo">Flipkart</a>
+        <div class="buy-row" aria-label="Buy this pickle">
+          <a class="buy-btn amazon" href="https://amzn.in/d/08v4jsUt" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="buy-btn flipkart" href="https://dl.flipkart.com/s/OI_cQ9NNNN" target="_blank" rel="noopener">Buy on Flipkart</a>
         </div>
       </article>
     </div>
